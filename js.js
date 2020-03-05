@@ -7,7 +7,6 @@ function WordStatistics8() {
     for (var i = 0; i < uniq.length; i++) {
         document.write(uniq[i] + " " + (str.split(uniq[i]).length - 1) + " ")
     }
-
 }
 
 function DropDuplicateInArray5() {
@@ -29,3 +28,47 @@ function countLetter() {
     alert("длина строки :"+str.length+ "  гласніе"+ text.length + "  согласніе "+ (str.length-text.length));
 }
 // countLetter();
+
+function CountInfo () {
+    let int = 121
+    if (int.toString().length > 4) {
+        return null;
+    }
+    let name = ["Тисячі", "Сотні", "Десятки", "Одиниці"]
+    let indexName = 4 - int.toString().length;
+    for (var i = 0; i < int.toString().length; i++ , indexName ++) {
+        document.writeln(name[indexName] + " " + int.toString()[i])
+    }
+}
+
+function ChahDesk(leng, heig) {
+    this.leng = leng;
+    this.heig = heig;
+
+    let char1 = "@"
+    let char2 = "#"
+
+    let letters = ['A','B','C','D','F','N','G','X','W','L','M','N','O','P','T','I','Z']
+    
+
+    let tempIndex = 1;
+    for (var i = 0; i < leng; i++) {
+        document.write(leng - i + " ")
+        ++tempIndex
+        for (var j = 0; j < heig; j++ ) {
+            ++ tempIndex
+            if (tempIndex % 2 == 0) {
+                document.write(char1+" ");
+            }
+            else {
+                document.write(char2+" ");
+            }
+        }
+        document.write("<br>");
+    }
+    document.write(".   . ")
+
+    for (var i = 0; i < heig; i++) {
+        document.write(letters[i]+"  ")
+    }
+}
