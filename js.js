@@ -7,7 +7,7 @@ function WordStatistics8() {
     for (var i = 0; i < uniq.length; i++) {
         document.write(uniq[i] + " " + (str.split(uniq[i]).length - 1) + " ")
     }
-   
+
 }
 
 function DropDuplicateInArray5() {
@@ -16,3 +16,16 @@ function DropDuplicateInArray5() {
     document.write(res)
 }
 
+function email7() {
+    let mail = "nedibil@gmail.com"
+    alert(/^[_a-z0-9-+-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,})$/i.test(mail));
+}
+// email7();
+function countLetter() {
+    let str= "лквжшащшуцщолдоушщуцзщзваар"
+    let regular = /[аоуеіи]/g;
+    let text= str.match(regular);
+
+    alert("длина строки :"+str.length+ "  гласніе"+ text.length + "  согласніе "+ (str.length-text.length));
+}
+// countLetter();
