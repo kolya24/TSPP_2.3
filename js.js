@@ -10,7 +10,7 @@ function WordStatistics8() {
    
 }
 
-function DropDuplicateInArray6() {
+function DropDuplicateInArray5() {
     var arr = [1, 2, 2, 4, 5, 4, 7, 8, 7, 3, 6]
     var res = Array.from(new Set(arr))
     document.write(res)
