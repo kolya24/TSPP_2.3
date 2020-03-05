@@ -7,6 +7,7 @@ function WordStatistics8() {
     for (var i = 0; i < uniq.length; i++) {
         document.write(uniq[i] + " " + (str.split(uniq[i]).length - 1) + " ")
     }
+
 }
 
 function DropDuplicateInArray5() {
@@ -28,6 +29,41 @@ function countLetter() {
     alert("длина строки :"+str.length+ "  гласніе"+ text.length + "  согласніе "+ (str.length-text.length));
 }
 // countLetter();
+function getExpansionFill() {
+    let str ="/home/user/project/main/main.js"
+    let regular = /\.[0-9a-z]{1,5}$/i
+    alert(str.match(regular))
+}
+// func4();
+function fun1()
+{
+   let str = prompt("Введите что-нибудь<br>...умное :");
+   str=str.toUpperCase();
+   if (str=="EN"){
+      funEN()
+    }
+    if (str=="UA"){
+        funUA()
+    }
+    else {
+        fun1()
+    }
+
+}
+fun1();
+
+function funEN(){
+    let number = prompt("enter number<br>...1-7 :");
+    let arr = ["monday" ,"tuesday" ,"wednesday" ,"thursday", "friday" ,"saturday" ,"sunday"]
+    alert(arr[number-1])
+}
+
+function funUA(){
+    let number = prompt("ведіть число 1-7 :");
+    let arr =["понеділок","вівторок","середа","четверг","пятниця","субота","неділя"]
+    alert(arr[number-1])
+
+}
 
 function CountInfo () {
     let int = 121
@@ -49,7 +85,7 @@ function ChahDesk(leng, heig) {
     let char2 = "#"
 
     let letters = ['A','B','C','D','F','N','G','X','W','L','M','N','O','P','T','I','Z']
-    
+
 
     let tempIndex = 1;
     for (var i = 0; i < leng; i++) {
